@@ -1,19 +1,9 @@
 import { Route } from '@vaadin/router';
-import './views/hello/hello-view';
+import './views/todo-view';
 
-export type ViewRoute = Route & {
-  title?: string;
-  icon?: string;
-  children?: ViewRoute[];
-};
-
-export const views: ViewRoute[] = [
-  // place routes below (more info https://vaadin.com/docs/latest/fusion/routing/overview)
+export const routes: Route[] = [
   {
     path: '',
-    component: 'hello-view',
-    icon: 'la la-file',
-    title: 'Hello',
+    component: 'todo-view',
   },
 ];
-export const routes: ViewRoute[] = [...views];

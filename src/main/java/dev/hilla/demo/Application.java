@@ -10,14 +10,16 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 /**
  * The entry point of the Spring Boot application.
  *
- * Use the @PWA annotation make the application installable on phones, tablets
- * and some desktop browsers.
+ * Use the @PWA annotation make the application installable on phones, tablets and some desktop
+ * browsers.
  *
  */
+@Theme("hilla")
+@PWA(name = "Hilla App")
 @SpringBootApplication
-@Theme(value = "hellohilla")
-@PWA(name = "Hello Hilla", shortName = "Hello Hilla", offlineResources = {"images/logo.png"})
-public class Application extends SpringBootServletInitializer implements AppShellConfigurator {
+public class Application 
+        extends SpringBootServletInitializer 
+        implements AppShellConfigurator {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
