@@ -4,9 +4,9 @@ import { View } from './view';
 import '@vaadin/vaadin-text-field';
 import '@vaadin/vaadin-button';
 import { Binder, field } from '@vaadin/form';
-import TodoModel from 'Frontend/generated/dev/hilla/demo/TodoModel';
-import Todo from 'Frontend/generated/dev/hilla/demo/Todo';
 import { TodoEndpoint } from 'Frontend/generated/endpoints';
+import TodoModel from 'Frontend/generated/dev/hilla/demo/entity/TodoModel';
+import Todo from 'Frontend/generated/dev/hilla/demo/entity/Todo';
 
 @customElement('todo-view')
 export class TodoView extends View {
@@ -38,6 +38,7 @@ export class TodoView extends View {
         <ul>
           ${this.todos.map((todo) => html` <li>${todo.task}</li> `)}
         </ul>
+        <a href="/people">Person list view</a>
       </div>
     `;
   }

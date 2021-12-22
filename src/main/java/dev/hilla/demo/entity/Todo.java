@@ -1,4 +1,4 @@
-package dev.hilla.demo;
+package dev.hilla.demo.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
