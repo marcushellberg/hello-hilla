@@ -15,10 +15,10 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  *
  */
 @Theme("hilla")
-@PWA(name = "Hilla App")
 @SpringBootApplication
-public class Application 
-        extends SpringBootServletInitializer 
+@PWA(name = "Hilla App", shortName = "Hilla")
+public class Application
+        extends SpringBootServletInitializer
         implements AppShellConfigurator {
 
     public static void main(String[] args) {
