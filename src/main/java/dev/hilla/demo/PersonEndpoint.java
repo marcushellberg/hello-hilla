@@ -1,11 +1,9 @@
-package dev.hilla.demo.endpoint;
+package dev.hilla.demo;
 
 import java.util.List;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.fusion.Endpoint;
 import com.vaadin.fusion.Nonnull;
-import dev.hilla.demo.entity.Person;
-import dev.hilla.demo.repository.PersonRepository;
 
 @Endpoint
 @AnonymousAllowed

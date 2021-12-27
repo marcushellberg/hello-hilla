@@ -1,8 +1,7 @@
-package dev.hilla.demo.repository;
+package dev.hilla.demo;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import dev.hilla.demo.entity.Person;
 
 public interface PersonRepository extends JpaRepository<Person, Integer> {
 

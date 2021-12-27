@@ -1,4 +1,4 @@
-package dev.hilla.demo.generator;
+package dev.hilla.demo;
 
 
 import java.time.LocalDateTime;
@@ -9,8 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
-import dev.hilla.demo.entity.Person;
-import dev.hilla.demo.repository.PersonRepository;
 
 @SpringComponent
 public class DataGenerator {
